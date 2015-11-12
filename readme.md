@@ -10,6 +10,11 @@ Pantera Mu Web (PMW) é um projeto Open-Source desenvolvido com o intuito de adq
 <li>Resetes</li>
 </ul>
 
+<b>Cadastro</b>
+<ul>
+<li>Cadastrar Usuário</li>
+</ul>
+
 <b>Painel</b>
 <ul>
 <li>Logar</li>
