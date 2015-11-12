@@ -53,11 +53,11 @@ class PanelController extends Controller
                         if ($user->first()):
                                     
 
-                            $auth = DB::table('MEMB_INFO')->where('memb___id', $login)->where('password',$password)->first();
+                            $auth = DB::table('MEMB_INFO')->where('memb___id', $login)->where('memb__pwd',$password)->first();
 
                             if($auth):
                                 
-                                DB::table('MEMB_INFO')->where('memb___id', $login)->where('password',$password)->update(['password' => $passwordNovo]);
+                                DB::table('MEMB_INFO')->where('memb___id', $login)->where('memb__pwd',$password)->update(['memb__pwd' => $passwordNovo]);
 
                                 return redirect('/painel')->with('message-true', 'Senha alterada com sucesso!');
 

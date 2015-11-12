@@ -57,7 +57,7 @@ class LoginController extends Controller
                         if ($user->first()):
                                     
 
-                            $auth = DB::table('MEMB_INFO')->where('memb___id', $login)->where('password',$password)->first();
+                            $auth = DB::table('MEMB_INFO')->where('memb___id', $login)->where('memb__pwd',$password)->first();
 
                             if($auth):
                                 Cookie::queue('loggedd', ['login' => $login,'email' => $auth->addr_info], '3444');
